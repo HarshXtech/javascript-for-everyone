@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the JavaScript Course</title>
+    <style>
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #00b4db, #0083b0);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.start-btn {
+    background: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.start-btn:hover {
+    background: #ff3b2f;
+}
+
+.curriculum-container {
+    margin-top: 2rem;
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 1rem; /* To prevent content from being hidden behind the scrollbar */
+}
+
+.curriculum {
+    text-align: left;
+}
+
+.curriculum h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.curriculum ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.curriculum li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Welcome to the JavaScript Course!</h1>
+        <p class="subtitle">Let's embark on a journey to master JavaScript together.</p>
+        <button id="startBtn" class="start-btn">Get Started</button>
+        
+        <div class="curriculum-container">
+            <div class="curriculum">
+                <h2>Course Curriculum</h2>
+                <ul>
+                    <li>Introduction to JavaScript</li>
+                    <li>Variables and Data Types</li>
+                    <li>Operators and Expressions</li>
+                    <li>Control Flow (Conditionals)</li>
+                    <li>Loops (For, While, Do-While)</li>
+                    <li>Functions and Scope</li>
+                    <li>Arrays and Array Methods</li>
+                    <li>Objects and Object-Oriented Programming</li>
+                    <li>DOM Manipulation</li>
+                    <li>Event Handling</li>
+                    <li>Asynchronous JavaScript (Callbacks, Promises, Async/Await)</li>
+                    <li>Error Handling</li>
+                    <li>APIs and Fetch</li>
+                    <li>Local Storage and Session Storage</li>
+                    <li>JavaScript ES6+ Features (Arrow Functions, Classes, Modules, etc.)</li>
+                    <li>Debugging and Testing</li>
+                    <li>Building and Deploying Projects</li>
+                    <li>Introduction to Modern JavaScript Frameworks (React, Vue, Angular)</li>
+                    <li>State Management and Context API</li>
+                    <li>Advanced Data Structures (Maps, Sets, WeakMap, WeakSet)</li>
+                    <li>Functional Programming Concepts</li>
+                    <li>JavaScript Performance Optimization</li>
+                    <li>Working with Webpack and Babel</li>
+                    <li>Building Single Page Applications (SPAs)</li>
+                    <li>Integrating with Backend Technologies (Node.js, Express)</li>
+                    <li>Security Best Practices in JavaScript</li>
+                    <li>Advanced Error Handling and Debugging Techniques</li>
+                    <li>Introduction to TypeScript</li>
+                    <li>Testing Frameworks (Jest, Mocha)</li>
+                    <li>Project Management with JavaScript Tools (NPM, Yarn)</li>
+                    <li>Deploying JavaScript Applications to Cloud Platforms (Heroku, Netlify)</li>
+                    <li>Creating Progressive Web Apps (PWAs)</li>
+                    <li>Performance Monitoring and Analytics</li>
+                    <li>Exploring JavaScript Ecosystem and Community Resources</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

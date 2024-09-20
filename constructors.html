@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Constructor : a special functions 
+
+        // 1) function-based constructor
+        // 2) class-based constructor
+
+
+        function Car(firstname, model, speed){
+            this.firstname = firstname
+            this.model = model
+            this.speed = speed
+
+            this.getDetails = function(){
+                return `The name is ${firstname} and model name is ${model} and the speed is ${speed}`
+            }
+        }
+
+
+        let car1 = new Car('alto' , '800' , 50)
+
+        let car2 = new Car("BMW" , 'bmw-super-fast-altra--pro-model', 10000000)
+
+        console.log(car1.getDetails())
+
+
+
+
+
+        
+    </script>
+</body>
+</html>

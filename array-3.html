@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="myid"></h1>
+    <script>
+                let marks = [45, 10, 100, 1, 50, 30, 3, 4, 89, 69, 6]
+
+                // iteration : iterating through each element of the array
+                // callback : using a function as an argument
+
+                // let marks2 = marks.map(myFunc)
+                // let marks2 = marks.filter(myFunc)
+                // let marks2 = marks.reduce(myFunc)
+                let marks2 = marks.reduceRight(myFunc)
+
+
+                // function myFunc(value, index, array){
+                //     return value * 2
+                // }
+
+                //   function myFunc(value, index, array){
+                //     return value > 18
+                // }
+
+                  function myFunc(total, value, index, array){
+                    return value += total
+                }
+
+                document.getElementById('myid').innerHTML = marks2
+
+    </script>
+</body>
+</html> 

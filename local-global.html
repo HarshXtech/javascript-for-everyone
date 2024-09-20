@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // local : a variable that is declared inside function!
+        // => local variables can be accessed inside functions only!
+
+
+        // global : a variable that is declared outside of function!
+        // global variables can be accessed from anywhere in the script!
+
+
+        let a = 10 // global variable!
+
+        
+        function myFunc(){
+            a = 20 // local variable : can be accessed inside function only!    
+            // alert(a)
+        }
+
+        alert(a) // 10
+        myFunc()
+
+        alert(a) // 20
+
+        // how to convert a local variable into global variable?
+        // if a variable inside a function is not declared, it becomes global variable autometically!
+    </script>
+</body>
+</html>

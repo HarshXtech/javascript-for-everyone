@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>The Area of rectangle is : <span id="rctarea"></span></h1>
+    <h1>The Area of Cricle is : <span id="circlearea"></span></h1>
+    <script>
+
+
+        function calculateArea(){
+            if (this.type == 'rectangle'){
+                return this.width * this.length
+            }
+            else if(this.type == 'circle'){
+                return Math.PI * Math.pow(this.radius, 2)
+            }
+        }
+
+        let rectangle = {
+            type : "rectangle",
+            width : 10,
+            length : 20
+        }       
+
+        let circle = {
+            type : 'circle',
+            radius : 40
+        }
+
+        document.getElementById('rctarea').innerHTML = calculateArea.call(rectangle)
+        document.getElementById('circlearea').innerHTML = calculateArea.call(circle)
+
+
+
+        // type : rectangle : width*length
+        // type : circle : pi*r^2
+
+
+    </script>
+</body>
+</html>

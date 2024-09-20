@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // .call 
+
+        // object, this!
+
+        let employee = {
+            details : function (city, salary){
+                return `The name of the employee is ${this.fname} and the profession is ${this.prof} and the city is ${city} and the salary is ${salary}`
+            }
+        }
+
+        let emp2 = {
+            fname : "Shubham",
+            prof : "Developer"
+        }
+
+        let emp3 = {
+            fname : "Ajay",
+            prof : "BA"
+        }
+
+
+        // call method will accept arguments saperately
+        // apply method will accept arguments in an array
+
+        // Bind : 
+
+        // console.log(employee.details.call(emp3, 'Mumbai', 100))
+
+        let info = employee.details.bind(emp2, 'mumbai', 100)
+
+
+        console.log(info())
+
+
+
+
+    </script>
+</body>
+</html>

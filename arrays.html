@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="myid"></p>
+    <script>
+
+        // Arrays :
+        // array is a collection of values!
+        // arrays can be accessed by indexing!
+        // arrays are mutable/changeable
+
+        let countries = ["India" , "UAE" , "USA" , "Russia" , "Japan" , "China"]
+        // countries[0] = "Canada"
+
+
+        // arrays method!
+
+        // push, pop, shift, unshift
+
+
+        // push : it helps us to add one element at last
+        // countries.push("Canada")
+
+        // pop : it is used to remove last element
+        // countries.pop()
+
+        // shift : to remove first element
+        // countries.shift()
+
+        // unshift : to add first element
+        // countries.unshift("new zeland")
+
+        // slice, splice
+
+        // starting-point, no. of element to delete, add
+        // countries.splice(3, 2, "switzerland" , "UK")
+
+        let continents = ["asia" , "Australia"]
+        let merge = countries.concat(continents)
+
+
+        // countries.
+
+        // map, filter, reduce
+
+        // sort methods
+
+        
+        document.getElementById('myid').innerHTML = merge.length
+    </script>
+</body>
+</html>

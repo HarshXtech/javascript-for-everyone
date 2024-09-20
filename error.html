@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // javascript executes code line by line
+
+        // console.log(1)
+        // console.log(2)
+        // console.log(3)  
+        // console.log(4)
+        // console.log(a)
+        // console.log(6)
+        // console.log(7)
+        // console.log(8)
+
+
+        // Error handling!
+
+        // try{
+        //     console.log('x')
+        // }
+        // catch{
+        //     console.log("X is not available!")
+        // }
+        // finally{
+        //     console.log("Error handling completed!")
+        // }
+
+
+        // console.log(5)
+        // console.log(6)
+
+
+        function divide(a, b){
+
+            try{
+                if(typeof a !== 'number' || typeof b !== 'number'){
+                    throw new Error("A and B must be integers / number!")
+                }
+
+                if(b == 0){
+                    throw "Second number must not be 0"
+                }
+
+                result = a / b
+                console.log(result)
+            }
+            catch(error){
+                console.log(error)
+            }
+        }
+
+        // console.log(89)
+        // numerator
+        // denomenator
+
+        // 5 / 7 : 
+
+            divide(10, 5)
+    </script>
+</body>
+</html>

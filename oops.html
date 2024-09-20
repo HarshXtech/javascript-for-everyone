@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // There are two approaches of programming!
+
+        // 1) POPs : procedural oriented programming system : Function-based programming
+        // 2) OOPs : object oriented programming system : class-based programming
+
+        // we are creating a pubg : 100, 1 : 99
+
+        // create 100 players when game starts
+        // create 1 player and use it 100 times!
+
+
+        // re-useability
+        // DRY : do not repeat yourself
+
+        // blue-print
+
+        class Player{
+
+            // private property
+            #inventory = [];
+
+            // I can create a private property by using #
+            
+            constructor(fname, health, weapon){
+                this.fname = fname
+                this.health = health
+                this.weapon = weapon
+            }
+
+            // health, walk, jump, fire, swim
+
+            attack(enemy){
+                this.health -= 10
+                console.log(`${this.fname} is attacked by ${enemy}`)
+            }
+
+            addInteventory(item){
+                this.#inventory.push(item)
+            }
+
+            showInventory(){
+                return `${this.fname}'s inventory is ${this.#inventory.join(' ,')}`
+            }
+
+            heal(){
+                this.health += 10
+                console.log(`${this.fname} is healing!`)
+            }
+
+            to_walk(){
+                console.log( this.fname + " is walking!")
+            }
+
+            to_fire(){
+                console.log(this.fname + " is firing!")
+            }
+
+
+        }
+
+
+        // instance
+        let p1 = new Player('Harsh', 100, 'Rifle')
+        let p2 = new Player('Shubham', 100, 'Shotgun')
+
+        p1.addInteventory('Granade')
+        p1.addInteventory('rifle')
+        p1.addInteventory('fuel')
+        console.log(p1.showInventory())
+
+        console.log(p2.showInventory())
+        // p1.attack(p2.fname)
+        // console.log("The health is " + p1.health)
+        // p1.heal()
+        // console.log("The health is " + p1.health)
+        
+        // p1.to_fire()
+        // p1.to_walk()
+
+        // p2.to_fire()
+        // p2.to_walk()
+
+
+        // Inheritance
+        // polymorphism
+        // encapsulation
+        // abstraction!
+        // static, super!
+
+
+        // Encapsulation : it is used for bundling data! we can use encapsulation for security
+
+    </script>
+
+</body>
+</html>

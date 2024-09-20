@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+   <h1 id="myid"></h1>
+    <script>
+        // time, year, month, date
+
+        // new keyword : object!
+        // it reduces the speed of javascript optimization
+
+        // let fname = "Javascript"
+        // alert(typeof fname)
+        // let sname = new String("javascript")
+        // alert(typeof sname) // will return object
+
+
+        // Get methods and Set methods!
+
+
+        // numeric :
+        // 0 - sunday , 1 - monday , 2 - tues , 3 - wednesday , 4 - thursday , 5 - friday , 6 - saturday
+
+        // let today = new Date()
+
+        // let arr = ["Sunday" , "Monday" , "Tuesday" , "wednesday" , "Thursday" , "Friday" , "Saturday"]
+
+        // let months = ["Jan" , "Fab" , "march0" , "april" , "May" , "June" , "July" , "Aug" , "Sept" , "Oct"]
+
+        // let day = arr[today.getDay()] // arr[5]
+
+        // let current_month = months[today.getMonth()] // months[8]
+
+        // indexing starts with 0
+
+        // 0-jan , 1-fab, ... 11 - dec
+
+        // document.getElementById('myid').innerHTML = today.getTime() // from 1-1-1970 5:30 to current
+
+        // alert(24 * 60 * 60 * 1000)
+
+
+        // Set Methods in dates
+
+        let today = new Date()
+
+        // today.setMonth(4)
+
+        // today.setSeconds(10)
+
+
+        // Javascript has static time
+
+        // How to make javascript time dynamic?
+        document.getElementById("myid").innerHTML = today
+    </script>
+</body>
+</html>
